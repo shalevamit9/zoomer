@@ -24,7 +24,6 @@ const Sidebar = () => {
               className={cn('flex gap-4 items-center p-4 rounded-lg justify-start', {
                 'bg-blue-1': isActive,
               })}
-              data-active={isActive}
             >
               <Image src={link.imageUrl} alt={link.label} width={24} height={24} />
               <p className="text-lg font-semibold max-lg:hidden">{link.label}</p>
