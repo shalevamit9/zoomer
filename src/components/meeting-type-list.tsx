@@ -28,8 +28,7 @@ const MeetingTypeList = () => {
 
     try {
       if (!values.dateTime) {
-        toast({ title: 'Please select a date and time' });
-        return;
+        return toast({ title: 'Please select a date and time' });
       }
 
       const id = crypto.randomUUID();
