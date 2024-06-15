@@ -86,9 +86,9 @@ const CallList = ({ type }: CallListProps) => {
             <MeetingCard
               key={(meeting as Call)?.id}
               title={
-                (meeting as Call).state?.custom.description.substring(0, 26) ||
-                (meeting as CallRecording).filename.substring(0, 20) ||
-                'No Description'
+                (meeting as Call).state?.custom?.description?.substring(0, 26) ||
+                (meeting as CallRecording)?.filename?.substring(0, 20) ||
+                'Personal Meeting'
               }
               date={
                 (meeting as Call).state?.startsAt?.toLocaleString() ||
